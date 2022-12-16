@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import { NavLink } from "react-router-dom"
 import "../css/style.css"
 import bars from "../assets/bars-solid.svg"
