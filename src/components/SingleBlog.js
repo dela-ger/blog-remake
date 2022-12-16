@@ -4,6 +4,8 @@ import apple from '../assets/apple.png'
 import { db } from "../firebase"
 import { collection, getDocs } from 'firebase/firestore'
 import NavBar from './NavBar'
+import Footer from './Footer'
+import "../css/style.css"
 
 function SingleBlog() {
     const [posts, setPosts] = useState([])
@@ -46,6 +48,8 @@ function SingleBlog() {
         </div>
        
       </div>
+
+      <Footer />
     </>
   )
 }

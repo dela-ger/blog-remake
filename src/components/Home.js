@@ -5,6 +5,7 @@ import arrowRight from "../assets/arrow-right-solid.svg"
 import { db } from '../firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import NavBar from './NavBar'
+import Footer from './Footer'
 import "../css/style.css"
 
 function Home() {
@@ -102,6 +103,8 @@ function Home() {
         </div>
 
       </section>
+
+      <Footer />
     </>
   )
 }
