@@ -89,6 +89,20 @@ nav li a{
 @media only screen and (min-width:768px) {
     header{
         display: flex;
+        /* border: red solid 1px; */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #143668;
+        
+    }
+
+    /* #nav-position{
+        color: #fff;
+    } */
+
+    .nav-logo a{
+        color: #fff;
     }
 
     .menu-bar{
@@ -99,12 +113,13 @@ nav li a{
         display: flex;
         visibility: visible;
         position: initial;
-        background-color: white;
+        background-color: rgb(20, 54, 104);
         flex-direction: row;
     }
 
-    nav li{
+    nav li a{ 
         font-size: initial;
+        color: #fff;;
     }
 }
 
@@ -329,22 +344,30 @@ nav li a{
 
 /* Single blog styles */
 .single-container{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     /* border: 2px solid red; */
 }
 
+.single-content{
+    /* border: 1px solid red; */
+    /* padding: ; */
+
+}
+
 .single-content > h1 {
-    margin: 3rem 2rem 0 2rem;
+    /* margin: 2rem 2rem 0 2rem; */
     color: rgb(235, 86, 86);
     text-align: center;
 }
 
 .single-content > p {
-    margin: 2rem 2rem 0 2rem;
+    /* margin: 2rem 2rem 1.5rem 2rem; */
     text-align: center;
+    /* padding-top: 1.2rem; */
+    /* padding-bottom: 1.2rem; */
 }
 
 .apple-img {
@@ -363,9 +386,9 @@ nav li a{
 
 @media only screen and (min-width: 768px) {
     .single-container {
-        border: 1px solid lime;
+        /* border: 1px solid lime; */
         display: block;
-        margin: 0 10rem 0;
+        margin: 5rem 10rem 0;
     }
 
     .single-content > p {
@@ -378,5 +401,17 @@ nav li a{
 }
 
 footer{
-    
+    padding: 1.2rem;
+    background-color: rgb(20, 54, 104);
+    color: #fff;
+}
+
+.footer-social-media {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+}
+
+.footer-social-media > li > a {
+    color: #fff;
 }

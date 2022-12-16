@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { NavLink } from "react-router-dom"
 import "../css/style.css"
 import bars from "../assets/bars-solid.svg"
@@ -6,7 +6,26 @@ import xmark from "../assets/xmark-solid.svg"
 
 
 function NavBar() {
+    // const [scroll, setScroll] = useState(0)
+    // const [color, setColor] = useState("#143668")
     const navRef = useRef();
+
+    // const handleScroll = () => {
+    //    setScroll(window.pageYOffset)
+    //    if (scroll > 20) {
+    //     setColor('#143668')
+    //    } else {
+    //     setColor("transparent")
+    //    }
+    // }
+
+    // useEffect(() => {
+    //     window.addEventListener('scroll', handleScroll)
+
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll)
+    //     }
+    // }, [])
 
     const showMenu = () => {
         navRef.current.classList.toggle("responsive-menu")
@@ -14,7 +33,7 @@ function NavBar() {
     }
   return (
     <>
-        <header>
+        <header id='nav-position' >
             <h2 className='nav-logo'><NavLink to="/">Kob's Blog</NavLink></h2>
     
             <nav className="nav-container" ref={navRef}>

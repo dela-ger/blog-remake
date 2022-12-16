@@ -34,6 +34,7 @@ function SingleBlog() {
 
   return (
     <>
+    <div>
         <NavBar />
 
         <div className='single-container'>
@@ -43,13 +44,14 @@ function SingleBlog() {
           <img src={apple} alt="apple logo from flaticon.com" />
           </div>
           
-
+            
           <p>{detail.content}</p>
         </div>
        
       </div>
 
       <Footer />
+      </div>
     </>
   )
 }
