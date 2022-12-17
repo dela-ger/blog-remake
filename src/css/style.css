@@ -90,8 +90,8 @@ nav li a{
     header{
         display: flex;
         /* border: red solid 1px; */
-        position: fixed;
-        top: 0;
+        /* position: fixed; */
+        /* top: 0; */
         width: 100%;
         background-color: #143668;
         
@@ -343,63 +343,58 @@ nav li a{
 }
 
 /* Single blog styles */
-.single-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /* border: 2px solid red; */
-}
-
-.single-content{
+.single-container > *{
     /* border: 1px solid red; */
-    /* padding: ; */
-
+    margin: 1.2rem 2.5rem 0;
 }
 
-.single-content > h1 {
-    /* margin: 2rem 2rem 0 2rem; */
-    color: rgb(235, 86, 86);
+.single-title {
+    margin: ;
     text-align: center;
 }
 
-.single-content > p {
-    /* margin: 2rem 2rem 1.5rem 2rem; */
-    text-align: center;
-    /* padding-top: 1.2rem; */
-    /* padding-bottom: 1.2rem; */
-}
-
-.apple-img {
+.single-apple-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
-    padding: 1.2rem;
 }
 
-.apple-img > img {
-    object-fit: cover;
-    max-width: 20rem;
-    height: 20rem;
+.single-apple-img > img {
+    /* object-fit: contain; */
+    width: 100%;
+    height: auto;
 }
 
-@media only screen and (min-width: 768px) {
-    .single-container {
-        /* border: 1px solid lime; */
-        display: block;
-        margin: 5rem 10rem 0;
-    }
-
-    .single-content > p {
-        font-size: 1.5rem;
-    }
+.single-content {
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin: 1.2rem 1.5rem 1.2rem;
 }
 
 @media only screen and (min-width: 768px){
-    
+    .single-container > * {
+        /* border: 1px solid red; */
+
+    }
+
+    .single-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .single-title {
+        font-size: 1.5rem;
+    }
+
+    .single-apple-img {
+        max-width: 40%;
+    }
 }
 
+/* Style for the footer */
 footer{
     padding: 1.2rem;
     background-color: rgb(20, 54, 104);
@@ -412,6 +407,6 @@ footer{
     gap: 0.5rem;
 }
 
-.footer-social-media > li > a {
+/* .footer-social-media > li > a {
     color: #fff;
-}
+} */

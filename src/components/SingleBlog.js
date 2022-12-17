@@ -34,24 +34,24 @@ function SingleBlog() {
 
   return (
     <>
-    <div>
+    <div className="nav">
         <NavBar />
-
+    </div>
+        
         <div className='single-container'>
-        <div className="single-content">
-          <h1>{detail.title}</h1>
-          <div className="apple-img">
-          <img src={apple} alt="apple logo from flaticon.com" />
-          </div>
-          
-            
-          <p>{detail.content}</p>
+            <div className="single-title">
+                <h1>{detail.title}</h1>
+            </div>
+            <div className="single-apple-img">
+                <img src={apple} alt="apple logo from flaticon.com" />
+            </div>
+            <div className="single-content">
+                <p>{detail.content}</p>
+            </div>
         </div>
-       
-      </div>
 
-      <Footer />
-      </div>
+        <Footer />
+    
     </>
   )
 }
