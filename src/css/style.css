@@ -180,6 +180,13 @@ nav li a{
 
 /* Featured blog section on the home page */
 
+#featured-heading {
+    text-align: center;
+    text-decoration: underline;
+    font: bolder;
+    margin-top: 1.2rem;
+}
+
 .featured-blogs{
     display: flex;
     justify-content: center;
@@ -254,6 +261,11 @@ nav li a{
 
 @media only screen and (min-width: 768px) {
 
+    #featured-heading{
+        font-size: 2.5rem;
+        text-decoration: none;
+    }
+    
     .featured-blogs{
         display: grid;
         place-items: center;

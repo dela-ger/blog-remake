@@ -67,7 +67,7 @@ function Home() {
       </section>
 
 <hr />
-
+<h2 id='featured-heading'>Featured blogs</h2>
       <section className="featured-blogs">        
         {getPosts()}
       </section>
