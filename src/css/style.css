@@ -154,11 +154,11 @@ nav li a{
     color: #fff;
     background-color: #143668;
     border-radius: 10px;
-    border: none;
+    border: #22539d;
 }
 
 #hero-btn:hover {
-    background-color: #e4746e;
+    background-color: #2f61ab;
 }
 
 #hero-btn > a{
@@ -203,7 +203,7 @@ nav li a{
 .image-featured{
     /* border: 1px solid blue; */
     width: 100%;
-    background-color: #e83f36;
+    background-color: #22539d;
     min-height: 10rem;
     
 }
@@ -226,9 +226,9 @@ nav li a{
 }
 
 .more-btn{
-    background-color: #e83f36;
+    background-color: #22539d;
     padding: 0.5rem;
-    border: #e83f36;
+    border: #22539d;
     
 }
 

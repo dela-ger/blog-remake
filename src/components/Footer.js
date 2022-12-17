@@ -14,15 +14,15 @@ function Footer() {
       
 
       <div className="footer-social-media">
-        <Link to='https://linkedin.com/in/germaine-djameh'>
+        <a href='https://linkedin.com/in/germaine-djameh'>
             <img src={linkedIn} alt="linkedIn account" width="50px" />        
-        </Link>
-        <Link to='https://github.com/dela-ger'>
+        </a>
+        <a href='https://github.com/dela-ger'>
             <img src={gitHub} alt="linkedIn account" width="50px" />        
-        </Link>
-        <Link to='https://mobile.twitter.com/kobby_germain'>
+        </a>
+        <a href='https://mobile.twitter.com/kobby_germain'>
             <img src={twitter} alt="linkedIn account" width="50px" />        
-        </Link>
+        </a>
         
       </div>
 
