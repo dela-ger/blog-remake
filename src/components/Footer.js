@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import "../css/style.css"
 import linkedIn from "../assets/linkedin.svg"
 import gitHub from "../assets/square-github.svg"
