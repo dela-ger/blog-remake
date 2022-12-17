@@ -9,7 +9,7 @@ import "../css/style.css"
 
 function SingleBlog() {
     const [posts, setPosts] = useState([])
-    const {postAuthor} = useParams()
+    const {postId} = useParams()
 
     const fetchNews = () => {
         const postsRef = collection(db, 'posts')
@@ -26,7 +26,7 @@ function SingleBlog() {
         fetchNews()
       },[])
 
-      const detail = posts.find((post) => post.author === postAuthor)
+      const detail = posts.find((post) => post.id === postId)
 
       if(posts.length === 0) {
         return null

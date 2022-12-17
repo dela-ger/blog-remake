@@ -14,17 +14,19 @@ function Footer() {
       
 
       <div className="footer-social-media">
-        <Link>
+        <Link to='https://linkedin.com/in/germaine-djameh'>
             <img src={linkedIn} alt="linkedIn account" width="50px" />        
         </Link>
-        <Link>
+        <Link to='https://github.com/dela-ger'>
             <img src={gitHub} alt="linkedIn account" width="50px" />        
         </Link>
-        <Link>
+        <Link to='https://mobile.twitter.com/kobby_germain'>
             <img src={twitter} alt="linkedIn account" width="50px" />        
         </Link>
         
       </div>
+
+      
 
    </footer>
   )

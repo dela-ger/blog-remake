@@ -40,9 +40,9 @@ function Home() {
                  </div>
                  <div className="date-btn">
                    <span id="date">
-                     September,2022
+                     December,2022
                    </span>
-                   <Link to={`/blog/${post.author}`}>
+                   <Link to={`/blog/${post.id}`}>
                      <button className='more-btn'><img id='arrow-right' src={arrowRight} alt="arrow right" /></button>
                    </Link>
                  </div>
@@ -60,8 +60,9 @@ function Home() {
 
         <section className='hero'>
         <div className="hero-content">
-          <h1> What Topic will we put here...</h1>
-          <button id='hero-btn'><Link to='/blog'>Read more</Link></button>
+          <h1> Get some of your hot tech stories here...</h1>
+          {/* {posts.map(post => <button id='hero-btn'><Link to={`/blog/${post[0].id}`}>Read more</Link></button>)} */}
+          <button id='hero-btn'><Link to='/'>Read more</Link></button>
         </div>
       </section>
 

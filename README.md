@@ -47,3 +47,6 @@ This site is made up of 2 pages
 -HTML
 -CSS
 -Vanila Javascript
+
+### Here is a link to the website.
+-https://kobsblog.netlify.app/
